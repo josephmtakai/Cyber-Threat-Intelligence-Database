@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyber Threat Intelligence Database</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="backend.cpp"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Cyber Threat Intelligence Database</h1>
+
+        <!-- Threats Form -->
+        <div class="form-section">
+            <h2>Add New Threat</h2>
+            <form id="threatForm">
+                <input type="text" placeholder="Threat Type" required>
+                <textarea placeholder="Description" required></textarea>
+                <textarea placeholder="Mitigation" required></textarea>
+                <button type="submit">Add Threat</button>
+            </form>
+        </div>
+
+        <!-- Indicators Form -->
+        <div class="form-section">
+            <h2>Add New Indicator</h2>
+            <form id="indicatorForm">
+                <input type="text" placeholder="Indicator Type" required>
+                <input type="text" placeholder="Value" required>
+                <input type="text" placeholder="Related Threat" required>
+                <button type="submit">Add Indicator</button>
+            </form>
+        </div>
+
+        <!-- Sources Form -->
+        <div class="form-section">
+            <h2>Add New Source</h2>
+            <form id="sourceForm">
+                <input type="text" placeholder="Source Name" required>
+                <input type="text" placeholder="Source Type" required>
+                <textarea placeholder="Details" required></textarea>
+                <button type="submit">Add Source</button>
+            </form>
+        </div>
+
+        <!-- Reports Form -->
+        <div class="form-section">
+            <h2>Add New Report</h2>
+            <form id="reportForm">
+                <input type="text" placeholder="Title" required>
+                <input type="date" required>
+                <input type="text" placeholder="Author" required>
+                <textarea placeholder="Content" required></textarea>
+                <button type="submit">Add Report</button>
+            </form>
+        </div>
+
+        <!-- Display Tables -->
+        <div class="table-section">
+            <h2>Threats Table</h2>
+            <table id="threatTable">
+                <thead>
+                    <tr>
+                        <th>Type</th>
+                        <th>Description</th>
+                        <th>Mitigation</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Populate with data -->
+                </tbody>
+            </table>
+        </div>
+
+        <div class="table-section">
+            <h2>Indicators Table</h2>
+            <table id="indicatorTable">
+                <thead>
+                    <tr>
+                        <th>Type</th>
+                        <th>Value</th>
+                        <th>Related Threat</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Populate with data -->
+                </tbody>
+            </table>
+        </div>
+
+        <div class="table-section">
+            <h2>Sources Table</h2>
+            <table id="sourceTable">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Type</th>
+                        <th>Details</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Populate with data -->
+                </tbody>
+            </table>
+        </div>
+
+        <div class="table-section">
+            <h2>Reports Table</h2>
+            <table id="reportTable">
+                <thead>
+                    <tr>
+                        <th>Title</th>
+                        <th>Date</th>
+                        <th>Author</th>
+                        <th>Content</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Populate with data -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
